@@ -1,0 +1,32 @@
+﻿body {
+    text-align: center;
+    /*background-image: radial-gradient(brown, yellow, pink);*/
+    background-image: url("http://wellworthsurgical.com/wp-content/uploads/parser/background-light-1.jpg");
+}
+#para
+{
+    text-align:left;
+    
+}
+#big
+{
+    text-align:center;
+    font: 800;
+    font-family:'DejaVu Sans Mono';
+    font-weight: bold;
+    color:orangered;
+    border-style:none none none groove;
+    border-color:blue;
+}
+aside {
+    text-align:left;
+    margin-right:100px;
+    
+    float:left;
+    color: #29627e;
+}
+.signup 
+{
+    text-align: center;
+    font-weight: bold:
+}

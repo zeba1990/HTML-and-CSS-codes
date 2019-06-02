@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fashion made easy</title>
+    <style>
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+            position: relative;
+            width:50%;
+        }
+        .image_table {
+            float: left;
+            position:relative;
+            left: 100px;
+            width: 25%;
+            padding: 2px 2px 2px 2px;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+            filter: grayscale(10%);
+        }
+        img {
+            object-fit:fill;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: 0.5s ease;
+            background-color: blue;
+        }
+        
+        .clearfix:hover .overlay {
+            bottom: 0;
+            height: 100%;
+           
+        }
+        #overlay1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow:hidden;
+            width: 0;
+            height: 100%;
+            transition: 0.5s ease;
+            background-color: blue;
+
+        }
+        
+
+        .clearfix:hover #overlay1 {
+            
+            width: 100%;
+            
+        }
+
+        
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 40%;
+            left: 48%;
+            transform: translate(-40%, -48%);
+        }
+        #link_id {
+            width: 200px;
+            border-spacing: 5px;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button {
+            margin-top: 68px;
+            float: right;
+            padding: 10px;
+            display: inline; /* the default for span */
+            position: relative;
+            right: 100px;
+            width: 120px;
+            height: 60px;
+            padding: 16px;
+            box-sizing: border-box;
+            border: 3px solid black;
+            border-radius: 8px;
+            background-color: greenyellow;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+    </style>
+</head>
+<body style="background-color: bisque">
+    <h1 style="color:maroon; font-size:400%; text-align: center">Fashion made easy</h1>
+    <h3 style="text-align: center; color:mediumvioletred ">Fashion Lookbook</h3>
+    <p style="text-align:center"><strong>Are you interested in following <ins>Trends</ins>? <br /> </strong>Does Makeup is something you love or can't live without? 
+    Does your social media is full of makeup or hack vedios? <br /><i>
+    However, whenever you try to do some experiment
+    with your look or want to spice it up, you end up looking like this</i>?</p>
+    <div class="clearfix" >
+        
+        <div class="image_table clearfix">
+            <img src="https://worldwideinterweb.com/wp-content/uploads/2015/06/makeup-fail-1_20131119_1513349785.jpg"
+                 alt="makeup fails" width="230" height="200" />
+            <div class="overlay">
+                <p class="text">Failed attempt</p>
+            </div>
+        </div>
+        <div class="image_table clearfix">
+            <img src="https://i.pinimg.com/originals/25/b5/fb/25b5fb28d87e21668a1746b6b811b6c7.jpg" alt="makeup fail1"
+                 width="230" height="200" />
+            <div id="overlay1">
+                <p class="text">Over Makeup</p>
+            </div>
+        </div>
+        <div class="image_table clearfix">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLHTu-JDXtMq-0m0XOWlfT1zFn3sjC8XvO0c_w2zobti140Vy6Ig"
+                 alt="makeupfail2" width="230" height="200" />
+         </div>
+        <div>
+            <button class="button">FROM THIS</button>
+        </div>
+    </div>
+    <p style="font-size:larger; text-align:center; color: palevioletred"><mark>Worry no more. We are here to help you out.</mark></p>
+    <p style="font-size:larger; text-align:center; color: blueviolet" lang="hi">सब कुछ एक जगह पर</p>
+
+    <div class="clearfix">
+        <div class="image_table">
+            <img src="https://i.ytimg.com/vi/0joj7e6PNAU/hqdefault.jpg" alt="best dress" weight="230" height="200" />
+        </div>
+        <div class="image_table">
+            <img src="https://www.shipraslooks.com/img/about/about_makeup.jpg" alt="best dress" weight="230" height="200" />
+
+        </div>
+        <div class="image_table">
+            <img src="http://blog.tealand.ae/wp-content/uploads/2016/10/the-dc-ladies-wellness-5-HEALTHY-GIRL-DATE-ALTERNATIVES-TO-HAPPY-HOUR.jpg" alt="best dress" weight="230" height="200" />
+        </div>
+        <div>
+            <button class="button">TO THIS</button>
+        </div>
+    </div>
+
+    <p>
+     Fashion is a highly visual industry, which explains why Instagram is the social network of choice for lovers of style.
+     But there is far more fashion content online than what people share on social media.
+     It has always been a strong niche for blogging.
+    </p>
+
+    <p style="line-height: 20px">
+    There are many quality fashion blogs, which unsurprisingly feature high-quality photographs of the latest fashion innovations.
+    Most fashion blogs are full of inspiration for those mornings you open your wardrobe door with your mind in a blank.
+    They make an ideal place to begin your online research into what’s hot this year before you head off to purchase your own outfits.
+    They can also provide you with ideas about what you can mix and match to create that perfect look.<cite>best-fashion-blogs-you-should-follow</cite>
+    </p>
+    <p>
+    But it's not only the faishonable dress that complete your look, right makeup and healthy skin are also as important.
+    Till this date, there are many blogs which tells you latest trends, latest makeup look etc., but not blog tell you which look
+    suits your body type or skin tone. Fashion made easy is the only website, which tells you what suits you the best. And most importantly
+    this site shows you everything in one site. Things which are even remotely related to fashion can be found here. So no need to waste time in
+    searching the new look which actually suits you. Fashion made easy is an all in none website.
+    Try yourself.
+    </p>
+                <table id="link_id">
+                    <tr>
+                        <th>
+                            <figure>
+                                <figcaption>
+                                    <a href="file:///E:/test_repo/source/repos/fashion%20blog-latest%20tends.html" title="trends">
+                                        <img src="https://jbh.co.uk/wp-content/uploads/2019/01/shutterstock_369907340.jpg" alt="trend_image" height="80" width="120" />
+                                    </a>
+                                    TRENDS
+                                </figcaption>
+                            </figure>
+                        </th>
+                        <th>
+                            <figure>
+                                <figcaption>
+                                    <a href="file:///E:/test_repo/source/repos/fashion%20blog-makeup.html" title="trends">
+                                        <img src="https://lobbyobserver.org/wp-content/uploads/2018/12/how-to-fix-broken-make-up-267804-1536963220742-main.700x0c.jpg"
+                                             alt="makeup" width="120" height="80" />
+                                    </a>
+                                    MAKEUP
+                                </figcaption>
+                            </figure>
+                        </th>
+                        <th>
+                            <figure>
+                                <figcaption>
+
+                                    <a href="file:///E:/test_repo/source/repos/fashion%20blog-makeup.html" title="Health">
+                                        <img src="http://sxmislandtime.com/wp-content/uploads/2018/05/health-at-work.jpg" alt="health"
+                                             width="140" height="80" />
+                                    </a>
+                                    HEALTH
+                                </figcaption>
+                            </figure>
+                        </th>
+                    </tr>
+                </table>
+
+
+</body>
+</html>
